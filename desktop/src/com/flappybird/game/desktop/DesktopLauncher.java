@@ -7,6 +7,9 @@ import com.flappybird.game.flappybird;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
+		config.width = flappybird.WIDTH;
+		config.height = flappybird.HEIGHT;
+		config.title = flappybird.TITLE;
 		new LwjglApplication(new flappybird(), config);
 	}
 }
